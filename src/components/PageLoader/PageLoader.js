@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const PageLoader = (props) => {
     let class_name = 'page-loader';
@@ -18,6 +19,8 @@ const PageLoader = (props) => {
     )
 }
 
-
+PageLoader.propTypes = {
+    active: PropTypes.string
+}
 
 export default PageLoader;

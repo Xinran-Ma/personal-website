@@ -7,11 +7,12 @@ function App() {
 
 	useEffect(() => {
 		setDisplay('hide');
-	})
-	
+	}, [])
+
 	return (
 		<div className="App">
 			<PageLoader active={display_loader} />
+			
 		</div>
 	);
 }
