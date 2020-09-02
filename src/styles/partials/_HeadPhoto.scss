@@ -1,0 +1,11 @@
+.head-photo {
+    .photo {
+        max-width: 200px;
+        border-radius: 50%;
+        border: 5px solid #e0efff;
+        box-shadow: 0px 0px 0.5rem 1px #1787ff, 
+                    inset 0 0 0.5rem 1px #1787ff, 
+                    0px 0px 1rem 1px #1787ff, 
+                    inset 0 0 1rem 1px #1787ff;
+    }
+}

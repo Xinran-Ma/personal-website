@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const PageLoader = (props) => {
-    let class_name = 'page-loader';
+    let class_name = 'page-loader display';
 
     if ( props.active === 'hide' ) {
         class_name = 'page-loader hide';

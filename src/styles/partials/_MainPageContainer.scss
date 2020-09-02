@@ -1,0 +1,28 @@
+.main-page-container {
+    flex-direction: row;
+    max-width: 75rem;
+    margin: auto 0;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 50px 0;
+
+    &.display {
+        display: flex;
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    .left-area-container {
+        flex: 0 0 25%;
+    }
+
+    .middle-area-container {
+        flex: 0 0 65%;
+    }
+
+    .right-area-container {
+        flex: 0 0 10%;
+    }
+}
