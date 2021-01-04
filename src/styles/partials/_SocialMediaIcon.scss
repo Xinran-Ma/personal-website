@@ -1,5 +1,8 @@
 .social-media-icon {
     margin: 0 20px;
+    display: inline-block;
+    position: relative;
+
     svg {
         max-width: 30px;
         max-height: 30px;
@@ -33,6 +36,160 @@
                     0px 0px 1rem 1px #1787ff, 
                     inset 0 0 1rem 1px #1787ff;
             }
+        }
+    }
+
+    .spark {
+        display: block;
+        background-color: rgb(245, 245, 245);
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        opacity: 0;
+        border-radius: 1px;
+
+        &.spark-1 {
+            width: 2px;
+            height: 4px;
+        }
+
+        &.spark-2 {
+            width: 3px;
+            height: 3px;
+        }
+
+        &.spark-3 {
+            width: 1px;
+            height: 3px;
+        }
+    }
+
+    &:hover {
+
+        .spark-1 {
+            animation: spark-fly-1 0.3s ease-in-out
+        }
+
+        .spark-2 {
+            animation: spark-fly-2 0.3s ease-in-out
+        }
+
+        .spark-3 {
+            animation: spark-fly-3 0.3s ease-in-out
+        }
+    }
+
+    @keyframes spark-fly-1 {
+        0% {
+            opacity: 0.8;
+            bottom: 0%;
+            right: 0%;
+        }
+
+        20% {
+            opacity: 1;
+            bottom: -40%;
+            right: 10%;
+        }
+
+        40% {
+            opacity: 0.95;
+            bottom: -70%;
+            right: 20%;
+        }
+
+        60% {
+            opacity: 0.9;
+            bottom: -100%;
+            right: 30%;
+        }
+
+        80% {
+            opacity: 0.8;
+            bottom: -140%;
+            right: 40%;
+        }
+
+        100% {
+            opacity: 0;
+            bottom: -190%;
+            right: 50%;
+        }
+    }
+
+    @keyframes spark-fly-2 {
+        0% {
+            opacity: 0.8;
+            bottom: 0%;
+            right: 0%;
+        }
+
+        20% {
+            opacity: 1;
+            bottom: -70%;
+            right: -5%;
+        }
+
+        40% {
+            opacity: 0.95;
+            bottom: -100%;
+            right: -10%;
+        }
+
+        60% {
+            opacity: 0.9;
+            bottom: -140%;
+            right: -15%;
+        }
+
+        80% {
+            opacity: 0.8;
+            bottom: -190%;
+            right: -20%;
+        }
+
+        100% {
+            opacity: 0;
+            bottom: -250%;
+            right: -25%;
+        }
+    }
+
+    @keyframes spark-fly-3 {
+        0% {
+            opacity: 0.8;
+            bottom: 0%;
+            right: 0%;
+        }
+
+        20% {
+            opacity: 1;
+            bottom: -50%;
+            right: -10%;
+        }
+
+        40% {
+            opacity: 0.95;
+            bottom: -80%;
+            right: -20%;
+        }
+
+        60% {
+            opacity: 0.9;
+            bottom: -120%;
+            right: -30%;
+        }
+
+        80% {
+            opacity: 0.8;
+            bottom: -170%;
+            right: -40%;
+        }
+
+        100% {
+            opacity: 0;
+            bottom: -220%;
+            right: -50%;
         }
     }
 }
