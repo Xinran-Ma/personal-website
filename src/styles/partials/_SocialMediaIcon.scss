@@ -1,0 +1,38 @@
+.social-media-icon {
+    margin: 0 20px;
+    svg {
+        max-width: 30px;
+        max-height: 30px;
+        fill: $white;
+        transition: box-shadow 0.2s ease;
+        box-shadow: 0px 0px 0rem 0px #1787ff, 
+                    inset 0 0 0.5rem 0px #1787ff, 
+                    0px 0px 0.5rem 0px #1787ff, 
+                    inset 0 0 0rem 0px #1787ff;
+
+        path {
+            fill: $white;
+            transition: box-shadow 0.2s ease;
+            box-shadow: 0px 0px 0rem 0px #1787ff, 
+                    inset 0 0 0.5rem 0px #1787ff, 
+                    0px 0px 0.5rem 0px #1787ff, 
+                    inset 0 0 0rem 0px #1787ff;
+        }
+
+        &:hover {
+            fill: #e0efff;
+            box-shadow: 0px 0px 0.5rem 1px #1787ff, 
+                    inset 0 0 0.5rem 1px #1787ff, 
+                    0px 0px 1rem 1px #1787ff, 
+                    inset 0 0 1rem 1px #1787ff;
+
+            path {
+                fill: #e0efff;
+                box-shadow: 0px 0px 0.5rem 1px #1787ff, 
+                    inset 0 0 0.5rem 1px #1787ff, 
+                    0px 0px 1rem 1px #1787ff, 
+                    inset 0 0 1rem 1px #1787ff;
+            }
+        }
+    }
+}
